@@ -23,12 +23,11 @@ import { problemExamples } from '../app.data';
           <div class="rounded-[1.5rem] border border-white/10 bg-slate-950/60 p-2">
             <iframe
               title="Formulário para descrever problema operacional"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSd_PLACEHOLDER/viewform?embedded=true"
-              class="h-[760px] w-full rounded-[1.25rem] bg-white"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScefFto-h_rZl63HhtW1Mzm1W2Q7bNF4zb0dxtYVb2L24MwBQ/viewform?embedded=true"
+              class="h-[1403px] w-full rounded-[1.25rem] bg-white"
               loading="lazy"
             >Carregando…</iframe>
           </div>
-          <p class="px-2 pb-2 pt-4 text-center text-xs text-slate-500">Substitua o URL do iframe pelo Google Forms definitivo quando o formulário estiver publicado.</p>
         </div>
       </div>
     </section>
