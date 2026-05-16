@@ -2,8 +2,9 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
-const root = resolve(dirname(new URL(import.meta.url).pathname), '..');
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ngBin = process.platform === 'win32'
   ? join(root, 'node_modules', '.bin', 'ng.cmd')
   : join(root, 'node_modules', '.bin', 'ng');
