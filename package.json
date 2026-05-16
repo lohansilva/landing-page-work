@@ -8,7 +8,7 @@
     "build": "node tools/build.mjs --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:gh-pages": "ng deploy --base-href=/landing-page-work/"
+    "deploy:gh-pages": "npm run build -- --base-href=/landing-page-work/ && gh-pages -d dist/lohan-ai-automation-landing/browser"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +35,7 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.9.2"
